@@ -5,7 +5,7 @@ export default function Chat() {
     const messages = [ {sender: "Leia", body: "I love you", time: "14:57"}, {sender: "Han", body: "I know.", time: "15:01", id: 1} ]
     const renderMessages = messages.map(m => <MessageBubble message={m} />)
 
-    const styles = { height: "70vh", width: "50vw", margin: "0 auto", border: "1px solid red", padding: "5%" }
+    const styles = { height: "70vh", width: "50vw", margin: "0 auto", padding: "5%" }
 
     return (
         <div id="chatbox" style={styles}>
