@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>Kafana</h1>
+      <Link to="/">Home</Link>
       <Link to="/chat">Chat</Link>
       <Switch>
         <Route path="/chat" component={Chat} />
