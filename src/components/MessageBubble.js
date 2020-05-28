@@ -7,7 +7,7 @@ export default function MessageBubble({ message: { id, sender, body, time } }) {
         alignSelf: `${id ? "flex-end" : "flex-start"}`, textAlign: `${id ? "right" : "left"}`}
     return (
         <div style={styles}>
-            <span>{sender} : {time}</span>
+            <span>{sender} @ {time}</span>
             <div>{body}</div>
         </div>
     )
