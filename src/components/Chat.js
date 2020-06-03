@@ -12,7 +12,7 @@ export default class Chat extends Component {
 
     styles = { height: "70vh", width: "50vw", margin: "0 auto", padding: "5%" }
 
-    renderMessages = this.states.messages.map(m => <MessageBubble message={m} />)
+    renderMessages = this.state.messages.map(m => <MessageBubble message={m} />)
 
     render(){
         return (
